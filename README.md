@@ -4,7 +4,7 @@ Escola SENAI "Santo Paschoal Crepaldi" — Turma 1-2026-SESI_DEV_OC_1
 ## Integrantes
 - Nome Completo 1 — @pedrogielamo
 - Nome Completo 2 — @igordpo
-- Nome Completo 3 — @rafaeluiz/dev
+- Nome Completo 3 — @rafaelruiz-devv
 - Nome Completo 4 — @Nunumazaro
 ## Divisão de responsabilidades
 | Bloco | Integrante | O que ficou sob responsabilidade dele(a) |
