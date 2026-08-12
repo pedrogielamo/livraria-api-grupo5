@@ -15,4 +15,3 @@ Escola SENAI "Santo Paschoal Crepaldi" — Turma 1-2026-SESI_DEV_OC_1
 - Node.js
 - npm
   
-TESTE
