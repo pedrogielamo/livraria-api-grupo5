@@ -4,9 +4,7 @@ class Cliente extends Pessoa {
   #pontosFidelidade;
 
   constructor(nome, email, pontosFidelidade) {
-    // LACUNA 1 → chama o constructor da classe-mãe, passando nome e email
     super(nome, email);
-
     this.#pontosFidelidade = pontosFidelidade;
   }
 
@@ -14,12 +12,16 @@ class Cliente extends Pessoa {
     return this.#pontosFidelidade;
   }
 
-  apresentar() {
-    // LACUNA 2 → chama a versão original de apresentar() antes de acrescentar o restante
-    super.apresentar();
+  
+  calcularDesconto() {
+    return this.#pontosFidelidade > 100 ? 10 : 0;
+  }
 
+  apresentar() {
+    super.apresentar();
     console.log("Tipo: Cliente");
     console.log("Pontos: " + this.#pontosFidelidade);
+    console.log("Desconto: " + this.calcularDesconto() + "%");
   }
 }
 
