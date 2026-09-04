@@ -25,19 +25,36 @@ Este documento registra o progresso da elaboração do diagrama de classes para 
 
 ## 📊 2. Estrutura das Relações Mapeadas
 
-| Classe A | Relação | Classe B | Tipo / Símbolo no Diagrama |
-| :--- | :---: | :--- | :--- |
-| `LivroFisico` | `—>` | `Livro` | Herança (Triângulo vazio apontando para `Livro`) |
-| `LivroDigital` | `—>` | `Livro` | Herança (Triângulo vazio apontando para `Livro`) |
-| `Cliente` | `—>` | `Pessoa` | Herança (Triângulo vazio apontando para `Pessoa`) |
-| `Funcionario` | `—>` | `Pessoa` | Herança (Triângulo vazio apontando para `Pessoa`) |
-| `Livro` | `<◇—` | `Categoria` | Agregação (Losango vazio do lado de `Categoria`) |
-| `Carrinho` | `—◇>` | `Livro` | Agregação (Losango vazio do lado de `Carrinho`) |
-| `Pedido` | `—◆>` | `ItemPedido` | Composição (Losango preenchido do lado de `Pedido`) |
-| `ItemPedido` | `──>` | `Livro` | Associação (Seta simples) |
-| `Funcionario` | `──>` | `Cliente` | Associação (Seta simples, rótulo: *"atende"*) |
+## 2. Estrutura de Pastas do Esqueleto MVC
+![Diagrama UML Final](/diagrama-uml.png)
+*(Substitua o caminho acima pelo link/caminho da imagem do seu diagrama final exportado)*
 
----
+```text 
+livraria-api-grupo5/
+├── node_modules/
+├── src/
+│   ├── controllers/
+│   │   ├── CategoriaController.js
+│   │   └── LivroController.js
+│   ├── models/
+│   │   ├── Categoria.js
+│   │   ├── Cliente.js
+│   │   ├── Funcionario.js
+│   │   ├── Livro.js
+│   │   ├── LivroDigital.js
+│   │   ├── LivroFisico.js
+│   │   └── Pessoa.js
+│   ├── routes/
+│   │   ├── categoriaRoutes.js
+│   │   └── livroRoutes.js
+│   └── services/
+│       ├── CategoriaService.js
+│       └── LivroService.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
 
 ## 💬 3. Discussões e Justificativas da Equipe (Parte 3)
 
