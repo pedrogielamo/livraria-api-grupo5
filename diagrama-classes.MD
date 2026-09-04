@@ -26,9 +26,7 @@ Este documento registra o progresso da elaboração do diagrama de classes para 
 ## 📊 2. Estrutura das Relações Mapeadas
 
 ## 2. Estrutura de Pastas do Esqueleto MVC
-![Diagrama UML Final](/diagrama-uml.png)
-*(Substitua o caminho acima pelo link/caminho da imagem do seu diagrama final exportado)*
-
+![Diagrama UML Final](/diagrama-classes-v1.png)
 ```text 
 livraria-api-grupo5/
 ├── node_modules/
