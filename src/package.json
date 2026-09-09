@@ -4,7 +4,7 @@
   "description": "'# API de Gestão da Livraria — Grupo N\r Projeto da UC de Programação Back-End — Curso Técnico em Desenvolvimento de Sistemas\r Escola SENAI \"Santo Paschoal Crepaldi\" — Turma 1-2026-SESI_DEV_OC_1\r ## Integrantes\r - Nome Completo 1 — @pedrogielamo\r - Nome Completo 2 — @igordpo\r - Nome Completo 3 — @rafaelruiz-devv\r - Nome Completo 4 — @Nunumazaro\r ## Divisão de responsabilidades\r | Bloco | Integrante | O que ficou sob responsabilidade dele(a) |\r |---|---|---|\r | Bloco 1 | *(a preencher)* | *(a preencher)* |\r > Esta tabela é atualizada **a cada bloco**, com rodízio de responsabilidades entre os\r ## Tecnologias\r - Node.js\r - npm",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
