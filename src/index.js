@@ -1,5 +1,9 @@
 const express = require("express");
-const livroRoutes = require("./routes/livroRoutes");
+
+const routes = require("./routes");
+
+const logger = require("./middlewares/logger");
+
 
 const app = express();
 const PORTA = 3000;
@@ -7,8 +11,10 @@ const PORTA = 3000;
 // Configuração para permitir receber JSON no corpo das requisições
 app.use(express.json());
 
+app.use(logger);
+
 // Uso das rotas
-app.use("/livros", livroRoutes);
+app.use(routes);
 
 app.get("/", (req, res) => {
   res.send("API da livraria está no ar");
